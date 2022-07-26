@@ -13,6 +13,7 @@ def func1(a,b):
         a = a + 1
     print("Loop ended!!!")
 
+#call function func1
 func1(a,b)
 
 
