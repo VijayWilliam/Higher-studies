@@ -13,7 +13,11 @@ def func1(a,b):
         a = a + 1
     print("Loop ended!!!")
 
+<<<<<<< HEAD
 #call function func1
+=======
+#call function
+>>>>>>> subproject
 func1(a,b)
 
 
