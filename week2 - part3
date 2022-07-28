@@ -1,0 +1,26 @@
+print("1. carnivorous")
+print("2. salt water")
+print("3. community")
+fishType = int(input("Select the type of fish from below list (1 - 3): "))
+
+# Check if they want Carnivorous type
+if fishType == 1:
+    tempVar = input("Do you have smaller fish already? YES/NO: ")
+    tempVar = tempVar.upper()
+    if tempVar == "NO":
+        print("Great! Enjoy!")
+    else:
+        print("This is a bad idea! It'll eat your little ones!")
+# Check if they want Salt water fish type
+elif fishType == 2:
+    print("Wow, you're a fancy fish parent!")
+# Check if they want community fish type
+elif fishType == 3:
+    tempVar = int(input("How many fish of that type you already have? "))
+    if tempVar < 3:
+        print("Sorry! You should have get more than one")
+    else:
+        print("Yay, more friends!")
+# Error out if invalid selection entered
+else:
+    print("I don't think that's a type of fish.  Maybe you're looking for a lizard?")
