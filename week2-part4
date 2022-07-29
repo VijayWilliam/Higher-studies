@@ -1,0 +1,20 @@
+number = int(input("Enter a number: "))
+print("1. Find entered number is an even number")
+print("2. Find square value of entered number")
+print("3. Multiply with another number")
+
+option = int(input("What would you like to perform? Select an option from above list: "))
+if option == 1:
+    if (number % 2 == 0):
+        print(f"Entered number {number} is EVEN")
+    else:
+        print(f"Entered number {number} is ODD")
+elif option == 2:
+    sqrNumber = number * number
+    print(f"Squared value of {number} is: {sqrNumber}")
+elif option == 3:
+    multiplyNumber = int(input("Enter another number to multiply: "))
+    multiplyValue = number * multiplyNumber 
+    print(f"Multiple value of {number} and {multiplyNumber} is: {multiplyValue}")
+else:
+    print("Invalid selection entered. It should be one of 3 options listed")
